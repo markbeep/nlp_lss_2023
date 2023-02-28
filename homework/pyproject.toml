@@ -46,7 +46,7 @@ build-backend = "poetry.core.masonry.api"
 requires = ["poetry-core"]
 
 [tool.poe.tasks]
-ipy = "python3 -m ipykernel install --user --name=projectname"
+ipy = "python3 -m ipykernel install --user --name=homework"
 setup = ["spacy", "wordnet", "stopwords", "vader"]
 spacy = "python -m spacy download en_core_web_sm"
 stopwords = """python -c "import nltk; nltk.download('stopwords')" """
